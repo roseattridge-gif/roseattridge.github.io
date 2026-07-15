@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rose Attridge">
+  <defs>
+    <radialGradient id="cyan-wash" cx="62%" cy="34%" r="72%">
+      <stop offset="0" stop-color="#7fe4ff"/>
+      <stop offset=".46" stop-color="#087aa6"/>
+      <stop offset="1" stop-color="#06111f"/>
+    </radialGradient>
+    <linearGradient id="paper-line" x1="18" y1="8" x2="48" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#dff8ff" stop-opacity=".9"/>
+      <stop offset=".58" stop-color="#7fe4ff" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".12"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#06111f"/>
+  <circle cx="39" cy="25" r="25" fill="url(#cyan-wash)" opacity=".92"/>
+  <path d="M13 45c11-20 21-30 38-34-9 12-15 25-17 42-4-9-10-12-21-8Z" fill="#071c2e" opacity=".82"/>
+  <path d="M15 45c10-19 21-30 37-35" fill="none" stroke="url(#paper-line)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M23 46V18h12c7 0 12 4 12 10 0 4-2 7-6 9l8 9h-9l-7-8h-3v8h-7Zm7-15h5c3 0 5-1 5-4s-2-4-5-4h-5v8Z" fill="#f4f1eb"/>
+</svg>
