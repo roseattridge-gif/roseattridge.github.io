@@ -337,7 +337,7 @@ h1, h2, h3 {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid rgba(255, 255, 255, .16);
   border-left: 1px solid rgba(255, 255, 255, .16);
 }
@@ -407,8 +407,72 @@ h1, h2, h3 {
 .project a span { float: right; }
 .project-data { --project-wash: rgba(127, 228, 255, .18); }
 .project-cyan { --project-wash: rgba(0, 139, 194, .32); }
-.project-calm { --project-wash: rgba(159, 109, 85, .22); }
 .project-sit { --project-wash: rgba(103, 118, 100, .24); }
+
+.services {
+  background:
+    linear-gradient(180deg, rgba(244, 241, 235, .96), rgba(230, 238, 240, .92));
+}
+
+.services-heading {
+  max-width: 980px;
+  margin-bottom: 4.6rem;
+}
+
+.services-heading h2 {
+  max-width: 900px;
+}
+
+.services-heading > p:last-child {
+  max-width: 680px;
+  color: #5f6b73;
+  font-size: 1.1rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid rgba(7, 28, 46, .18);
+  border-left: 1px solid rgba(7, 28, 46, .18);
+}
+
+.services-grid article {
+  min-height: 330px;
+  padding: 1.8rem;
+  border-right: 1px solid rgba(7, 28, 46, .18);
+  border-bottom: 1px solid rgba(7, 28, 46, .18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-grid span {
+  color: var(--blue);
+  font-size: .65rem;
+  letter-spacing: .16em;
+}
+
+.services-grid h3 {
+  margin: 4rem 0 1rem;
+  font-size: clamp(2rem, 2.5vw, 3rem);
+}
+
+.services-grid p {
+  color: #60717a;
+}
+
+.services-note {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.services-note p {
+  max-width: 720px;
+  color: #5d6870;
+}
 
 .ideas {
   background: var(--bone);
@@ -650,7 +714,8 @@ footer strong {
 }
 
 @media (max-width: 1180px) {
-  .project-grid {
+  .project-grid,
+  .services-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -704,8 +769,14 @@ footer strong {
   }
 
   .principles,
-  .journal-grid {
+  .journal-grid,
+  .services-grid {
     grid-template-columns: 1fr;
+  }
+
+  .services-note {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .featured-note {
@@ -758,6 +829,15 @@ footer strong {
 
   .project-grid {
     grid-template-columns: 1fr;
+  }
+
+  .services-grid article {
+    min-height: 280px;
+    padding: 1.55rem;
+  }
+
+  .services-grid h3 {
+    margin-top: 3rem;
   }
 
   .project {
