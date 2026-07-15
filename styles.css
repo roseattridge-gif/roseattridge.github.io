@@ -118,9 +118,8 @@ h1, h2, h3 {
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(220px, .42fr);
+  grid-template-columns: minmax(0, 1fr);
   align-items: end;
-  gap: 5vw;
   background:
     linear-gradient(90deg, rgba(4, 12, 23, .96) 0%, rgba(4, 12, 23, .82) 38%, rgba(4, 12, 23, .24) 72%, rgba(4, 12, 23, .5) 100%),
     var(--cyanotype-image) center right / cover no-repeat,
@@ -148,7 +147,6 @@ h1, h2, h3 {
 }
 
 .hero-copy,
-.hero-index,
 .scroll-cue {
   position: relative;
   z-index: 2;
@@ -216,23 +214,6 @@ h1, h2, h3 {
 }
 
 .button:hover { transform: translateY(-2px); }
-
-.hero-index {
-  display: grid;
-  justify-self: end;
-  gap: 1px;
-  width: min(280px, 100%);
-  border: 1px solid rgba(255, 255, 255, .18);
-}
-
-.hero-index span {
-  display: block;
-  padding: 1rem 1.1rem;
-  background: rgba(6, 17, 31, .42);
-  color: rgba(255, 255, 255, .72);
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.45rem;
-}
 
 .scroll-cue {
   position: absolute;
@@ -710,17 +691,6 @@ footer strong {
       var(--night);
   }
 
-  .hero-index {
-    justify-self: start;
-    width: min(420px, 100%);
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .hero-index span {
-    font-size: 1.15rem;
-    padding: .85rem;
-  }
-
   .purpose-grid,
   .work-heading,
   .story-grid,
@@ -784,10 +754,6 @@ footer strong {
   .button {
     width: 100%;
     justify-content: center;
-  }
-
-  .hero-index {
-    grid-template-columns: 1fr;
   }
 
   .project-grid {
