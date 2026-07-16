@@ -1,19 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Rose Attridge">
-  <defs>
-    <radialGradient id="wash" cx="70%" cy="20%" r="82%">
-      <stop offset="0" stop-color="#165174"/>
-      <stop offset=".52" stop-color="#071c2e"/>
-      <stop offset="1" stop-color="#040b13"/>
-    </radialGradient>
-    <linearGradient id="reveal" x1="10" y1="48" x2="55" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0b5f84"/>
-      <stop offset=".5" stop-color="#7fe4ff"/>
-      <stop offset="1" stop-color="#f4f1eb"/>
-    </linearGradient>
-  </defs>
-  <rect width="64" height="64" rx="14" fill="url(#wash)"/>
-  <path d="M10 47c9-16 22-27 43-34" fill="none" stroke="url(#reveal)" stroke-width="4.2" stroke-linecap="round" opacity=".95"/>
-  <path d="M14 50c10-4.5 24-4.5 36 0" fill="none" stroke="#7fe4ff" stroke-width="1.4" stroke-linecap="round" opacity=".42"/>
+  <rect width="64" height="64" rx="14" fill="#05070a"/>
   <path d="M15 44V20h11.2c6.1 0 10.1 3.1 10.1 8.1 0 3.2-1.7 5.7-4.8 7L38 44h-6.9l-5.8-7.8H21V44h-6Zm6-12.8h4.8c2.8 0 4.4-1.1 4.4-3.1S28.6 25 25.8 25H21v6.2Z" fill="#f4f1eb"/>
   <path d="M39.2 44 48 20h5.5L62 44h-6.2l-1.5-4.8h-7.7L45.1 44h-5.9Zm8.7-9.6H53l-2.5-8.1-2.6 8.1Z" fill="#f4f1eb"/>
 </svg>
