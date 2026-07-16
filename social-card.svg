@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Rose Attridge - Making the unseen visible</title>
+  <desc id="desc">A dark cyanotype-inspired social sharing card for Rose Attridge.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06111f"/>
+      <stop offset="0.58" stop-color="#0a2f4e"/>
+      <stop offset="1" stop-color="#008bc2"/>
+    </linearGradient>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="rgba(255,255,255,.11)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)" opacity=".7"/>
+  <circle cx="1020" cy="110" r="260" fill="#7fe4ff" opacity=".13"/>
+  <circle cx="930" cy="500" r="230" fill="#fffdf8" opacity=".08"/>
+  <g fill="#fffdf8">
+    <text x="90" y="136" font-family="Inter, Arial, sans-serif" font-size="24" letter-spacing="8" opacity=".75">ROSE ATTRIDGE</text>
+    <text x="86" y="330" font-family="Cormorant Garamond, Georgia, serif" font-size="108">Making the unseen</text>
+    <text x="86" y="438" font-family="Cormorant Garamond, Georgia, serif" font-size="108" font-style="italic" fill="#7fe4ff">visible.</text>
+    <text x="90" y="536" font-family="Inter, Arial, sans-serif" font-size="30" opacity=".78">Strategy, storytelling, art and meaningful action</text>
+  </g>
+</svg>
