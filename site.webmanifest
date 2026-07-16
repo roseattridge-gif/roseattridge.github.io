@@ -1,0 +1,16 @@
+{
+  "name": "Rose Attridge",
+  "short_name": "Rose Attridge",
+  "description": "Making the unseen visible.",
+  "start_url": "/",
+  "display": "minimal-ui",
+  "background_color": "#f7f4ed",
+  "theme_color": "#06111f",
+  "icons": [
+    {
+      "src": "/favicon.svg?v=4",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
