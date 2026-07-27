@@ -202,7 +202,7 @@
 
 .wall-history-grid figcaption {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
   padding-top: .85rem;
   color: rgba(255, 255, 255, .48);
