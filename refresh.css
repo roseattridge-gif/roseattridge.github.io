@@ -15,6 +15,12 @@
 
 .hero-copy { max-width: 1040px; }
 
+/* Keep the opening copy readable across the full hero, including the lower edge. */
+.hero::after {
+  height: 24vh;
+  background: linear-gradient(to bottom, transparent, rgba(6, 17, 31, .88));
+}
+
 .hero-signals {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +127,29 @@
   color: rgba(255, 255, 255, .64);
   font-size: 1.05rem;
 }
+
+.wall-story {
+  display: grid;
+  grid-template-columns: minmax(0, .85fr) minmax(340px, 1.15fr);
+  gap: 3rem 9vw;
+  margin-top: 6rem;
+  padding: 3rem 0;
+  border-top: 1px solid var(--line-light);
+  border-bottom: 1px solid var(--line-light);
+}
+
+.wall-story h3 {
+  max-width: 680px;
+  margin: 0;
+  font-size: clamp(2.6rem, 4.5vw, 4.8rem);
+}
+
+.wall-story-copy {
+  max-width: 720px;
+  color: rgba(255, 255, 255, .72);
+}
+
+.wall-story-copy p:last-child { margin-bottom: 0; }
 
 .offer-grid {
   display: grid;
@@ -288,7 +317,8 @@
 @media (max-width: 1000px) {
   .split-intro,
   .services-heading,
-  .evidence-grid { grid-template-columns: 1fr; }
+  .evidence-grid,
+  .wall-story { grid-template-columns: 1fr; }
 
   .split-intro .lead {
     padding-left: 0;
