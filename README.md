@@ -1,6 +1,6 @@
 # Rose Attridge Personal Website
 
-A responsive one-page personal brand website built around the positioning:
+A responsive one-page consulting and personal brand website built around the positioning:
 
 **Rose Attridge — Making the unseen visible**
 
@@ -19,12 +19,16 @@ The `.nojekyll` file tells GitHub to serve the files exactly as-is.
 - `styles.css` — responsive visual design
 - `script.js` — navigation and reveal animations
 
-## Before publishing
+## Positioning and structure
 
-1. Replace the portrait placeholder with a strong editorial portrait or studio image.
-2. Replace placeholder LinkedIn and Instagram links.
-3. Decide whether each project links to a dedicated page or a separate brand website.
-4. Add real essays/newsletter posts to the Ideas section.
-5. Connect the site to roseattridge.com using your preferred host.
+The site leads with Rose's strategy and transformation practice, then moves through:
 
-The site is deliberately positioned as a personal umbrella brand rather than a conventional consulting brochure.
+1. Recognisable client situations
+2. Three clear engagement types
+3. Contextualised experience and proof
+4. A four-stage working approach
+5. Selected related projects
+6. A direct email conversion path
+
+The related projects remain visible without competing with the site's principal job:
+helping a suitable leader understand Rose's value and begin a conversation.
