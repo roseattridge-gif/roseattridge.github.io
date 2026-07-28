@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brief a Complex Business Problem | Rose Attridge</title>
+  <meta name="description" content="Brief Rose Attridge on a complex organisational, operational, data or transformation problem that has become difficult to see clearly." />
+  <link rel="canonical" href="https://roseattridge.com/brief.html" />
+  <link rel="icon" href="/favicon.svg?v=5" type="image/svg+xml" />
+  <style>
+    :root{--night:#06111f;--paper:#f2eee7;--ink:#11161d;--cyan:#04899a;--line:#c6c0b7}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.6}.wrap{max-width:1100px;margin:auto;padding:0 30px}.header{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}.header a{text-decoration:none;color:inherit}.brand{font-family:Georgia,serif;font-size:26px}.hero{padding:90px 0 60px}.eyebrow{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--cyan);font-weight:700}h1,h2,h3{font-family:Georgia,serif;font-weight:500;line-height:1.02}h1{font-size:clamp(48px,8vw,94px);max-width:900px;margin:15px 0 25px}.lead{font-size:20px;max-width:720px}.layout{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;padding-bottom:90px}.form{border-top:1px solid var(--line)}.field{padding:26px 0;border-bottom:1px solid var(--line)}.field label{display:block;font-family:Georgia,serif;font-size:28px;margin-bottom:8px}.field p{margin:0;color:#626970;font-size:14px}.field textarea,.field input{width:100%;margin-top:14px;padding:14px;border:1px solid var(--line);background:#faf7f2;font:inherit}.field textarea{min-height:115px;resize:vertical}.button{display:inline-block;margin-top:24px;padding:15px 20px;border:0;background:var(--night);color:white;font-weight:700;cursor:pointer}.aside{background:var(--night);color:white;padding:34px;height:max-content}.aside h2{font-size:42px;margin:10px 0 22px}.aside p,.aside li{color:#cbd3da}.aside ul{padding-left:20px}.aside .not{margin-top:30px;padding-top:24px;border-top:1px solid rgba(255,255,255,.18)}.footer{padding:28px 0;border-top:1px solid var(--line);font-size:13px;display:flex;justify-content:space-between}@media(max-width:800px){.layout{grid-template-columns:1fr}.aside{order:-1}.footer{display:block}}
+  </style>
+</head>
+<body>
+<header class="wrap header"><a class="brand" href="index.html">Rose Attridge</a><a href="index.html">Making the unseen visible</a></header>
+<main>
+<section class="wrap hero"><p class="eyebrow">A useful first conversation</p><h1>What is the problem your organisation cannot hold in one view?</h1><p class="lead">You do not need a polished brief. Give me the situation as it actually is: the decision or change at stake, what different people appear to believe, and why the picture has become difficult to piece together.</p></section>
+<section class="wrap layout">
+<form class="form" id="brief-form">
+<div class="field"><label for="name">Your name and organisation</label><p>Enough context for me to understand where the problem sits.</p><input id="name" name="name" required /></div>
+<div class="field"><label for="situation">What is happening?</label><p>Describe the visible problem, recurring friction or transformation concern.</p><textarea id="situation" name="situation" required></textarea></div>
+<div class="field"><label for="stakes">What is at stake?</label><p>The decision, deadline, risk, cost, customer impact or organisational consequence.</p><textarea id="stakes" name="stakes" required></textarea></div>
+<div class="field"><label for="perspectives">Who sees it differently?</label><p>Which functions, leadership groups, frontline teams or specialists hold different parts of the truth?</p><textarea id="perspectives" name="perspectives"></textarea></div>
+<div class="field"><label for="attempts">What has already been tried?</label><p>Reports, workshops, workstreams, reviews or interventions—and why they have not resolved it.</p><textarea id="attempts" name="attempts"></textarea></div>
+<div class="field"><label for="timing">Why now?</label><p>Include any important date or urgency.</p><textarea id="timing" name="timing"></textarea></div>
+<button class="button" type="submit">Open this brief in email</button>
+</form>
+<aside class="aside"><p class="eyebrow">A strong starting point when</p><h2>The organisation has pieces of the answer—but not a shared picture.</h2><ul><li>Leadership reporting and frontline experience tell different stories.</li><li>Multiple teams operate from incompatible versions of the truth.</li><li>A transformation is moving while confidence or control deteriorates.</li><li>The problem crosses process, people, data and governance boundaries.</li><li>Another presentation is unlikely to create shared understanding.</li></ul><div class="not"><strong>Rose will respond candidly.</strong><p>If Put It on the Wall is not the right starting point, I will say so rather than manufacture a larger engagement.</p></div></aside>
+</section>
+</main>
+<footer class="wrap footer"><span>© 2026 Rose Attridge</span><a href="mailto:rose@roseattridge.com">rose@roseattridge.com</a></footer>
+<script>
+const form=document.getElementById('brief-form');
+form.addEventListener('submit',event=>{event.preventDefault();const data=new FormData(form);const body=[['Name and organisation',data.get('name')],['What is happening?',data.get('situation')],['What is at stake?',data.get('stakes')],['Who sees it differently?',data.get('perspectives')],['What has already been tried?',data.get('attempts')],['Why now?',data.get('timing')]].map(([h,v])=>`${h}:\n${v||'—'}`).join('\n\n');window.location.href=`mailto:rose@roseattridge.com?subject=${encodeURIComponent('Briefing a complex organisational problem')}&body=${encodeURIComponent(body)}`;});
+</script>
+</body>
+</html>
