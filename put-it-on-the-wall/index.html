@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Put It On The Wall™ | Problem-first strategy for the age of AI</title>
-  <meta name="description" content="Before you choose the AI, put the problem on the wall. A guided six-week decision system for leadership teams facing AI pressure, fragmented evidence and unclear value." />
+  <title>AI Opportunity Wall | Problem-first AI strategy for leadership teams</title>
+  <meta name="description" content="A six-week AI opportunity assessment that helps leadership teams validate the business problem, decide whether AI is the right intervention and commit the next move." />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="https://putitonthewall.co.uk/" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -14,14 +14,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Put It On The Wall" />
   <meta property="og:title" content="Before you choose the AI, put the problem on the wall." />
-  <meta property="og:description" content="A problem-first decision system that turns fragmented evidence and AI pressure into one defensible move." />
+  <meta property="og:description" content="A six-week decision system that turns fragmented evidence and pressure to do AI into one defensible move." />
   <meta property="og:url" content="https://putitonthewall.co.uk/" />
-  <meta property="og:image" content="https://putitonthewall.co.uk/social-card.svg" />
+  <meta property="og:image" content="https://putitonthewall.co.uk/social-card.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Put It On The Wall — problem-first strategy for the age of AI" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Before you choose the AI, put the problem on the wall." />
   <meta name="twitter:description" content="See the problem. Make the decision. Move the business." />
-  <meta name="twitter:image" content="https://putitonthewall.co.uk/social-card.svg" />
+  <meta name="twitter:image" content="https://putitonthewall.co.uk/social-card.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,38 +33,58 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "Put It On The Wall",
-    "url": "https://putitonthewall.co.uk/",
-    "founder": {
-      "@type": "Person",
-      "name": "Rose Attridge",
-      "url": "https://roseattridge.com/"
-    },
-    "description": "A problem-first strategy company helping leadership teams make complex reality visible before choosing AI, technology or transformation interventions.",
-    "email": "rose@roseattridge.com"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://putitonthewall.co.uk/#organisation",
+        "name": "Put It On The Wall",
+        "url": "https://putitonthewall.co.uk/",
+        "email": "rose@roseattridge.com",
+        "founder": { "@type": "Person", "name": "Rose Attridge", "url": "https://roseattridge.com/" },
+        "description": "A problem-first strategy company helping leadership teams make complex reality visible before choosing AI, technology or transformation interventions."
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://putitonthewall.co.uk/#website",
+        "url": "https://putitonthewall.co.uk/",
+        "name": "Put It On The Wall",
+        "alternateName": "WALL",
+        "publisher": { "@id": "https://putitonthewall.co.uk/#organisation" },
+        "inLanguage": "en-GB"
+      },
+      {
+        "@type": "Service",
+        "@id": "https://putitonthewall.co.uk/#ai-opportunity-wall",
+        "name": "AI Opportunity Wall",
+        "serviceType": "AI opportunity assessment and decision programme",
+        "description": "A guided six-week decision system that helps leadership teams validate a significant business problem, compare AI with non-AI interventions and commit one measurable next move.",
+        "url": "https://putitonthewall.co.uk/#programme",
+        "provider": { "@id": "https://putitonthewall.co.uk/#organisation" },
+        "areaServed": "GB",
+        "audience": { "@type": "BusinessAudience", "audienceType": "COOs, data leaders, transformation directors, strategy leaders and business-unit managing directors" },
+        "offers": { "@type": "Offer", "price": "15000", "priceCurrency": "GBP", "description": "Founding-team programme from £15,000 plus VAT, subject to fit and scope." }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://putitonthewall.co.uk/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Does every programme end with an AI recommendation?", "acceptedAnswer": { "@type": "Answer", "text": "No. A credible No-AI decision is a valuable outcome. The purpose is to choose the intervention that creates value, not to justify technology already selected." } },
+          { "@type": "Question", "name": "Is this an AI strategy workshop?", "acceptedAnswer": { "@type": "Answer", "text": "No. It is a six-week AI opportunity assessment and decision system. Live sessions are used only where people need to resolve different interpretations, make trade-offs or commit ownership." } },
+          { "@type": "Question", "name": "How is this different from AI use-case prioritisation?", "acceptedAnswer": { "@type": "Answer", "text": "Conventional prioritisation often starts with a list of ideas. AI Opportunity Wall starts with evidence, validates the underlying business problem and compares AI with credible non-AI alternatives before anything is prioritised." } },
+          { "@type": "Question", "name": "What does the programme cost?", "acceptedAnswer": { "@type": "Answer", "text": "Founding-team programmes start from £15,000 plus VAT. If the programme fits, Rose provides a fixed-fee scope covering the six-week journey, dates, internal roles, support boundaries and definition of done." } }
+        ]
+      }
+    ]
   }
   </script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header" data-header>
-    <a class="wordmark" href="#top" aria-label="Put It On The Wall home">
-      <span>PUT IT</span><span>ON THE</span><span class="wordmark-wall">WALL</span>
-    </a>
-
-    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu>
-      <span>Menu</span>
-      <span class="menu-mark" aria-hidden="true"></span>
-    </button>
-
+    <a class="wordmark" href="#top" aria-label="Put It On The Wall home"><span>PUT IT</span><span>ON THE</span><span class="wordmark-wall">WALL</span></a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-menu><span>Menu</span><span class="menu-mark" aria-hidden="true"></span></button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation" data-nav>
-      <a href="#problem">The problem</a>
-      <a href="#method">The WALL method</a>
-      <a href="#programme">The programme</a>
-      <a href="#founder">Why Rose</a>
-      <a class="nav-cta" href="mailto:rose@roseattridge.com?subject=AI%20Opportunity%20Wall%20founding%20team">Start a conversation</a>
+      <a href="#problem">The problem</a><a href="#origin">Why the wall</a><a href="#method">The method</a><a href="#programme">The programme</a><a href="#proof">Evidence</a><a class="nav-cta" href="#fit">Check fit</a>
     </nav>
   </header>
 
@@ -71,288 +93,100 @@
       <div class="hero-copy reveal">
         <p class="kicker">Problem-first strategy for the age of AI</p>
         <h1>Before you choose the AI,<br><em>put the problem on the wall.</em></h1>
-        <p class="hero-lead">
-          AI Opportunity Wall is a guided six-week decision system for leadership teams.
-          It turns fragmented evidence, competing opinions and pressure to “do AI” into one defensible move.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="mailto:rose@roseattridge.com?subject=AI%20Opportunity%20Wall%20founding%20team&body=Hi%20Rose%2C%0A%0AI%27d%20like%20to%20talk%20about%20whether%20our%20challenge%20fits%20the%20AI%20Opportunity%20Wall.%0A%0AOrganisation%3A%0AThe%20problem%20we%27re%20trying%20to%20solve%3A%0AWhy%20now%3A%0A">Apply as a founding team</a>
-          <a class="button button-secondary" href="#method">See the method</a>
-        </div>
+        <p class="hero-lead">AI Opportunity Wall is a guided six-week decision system for leadership teams facing AI pressure, fragmented evidence and unclear value.</p>
+        <p class="hero-plain">Your team decides which business problem is worth solving, whether AI is the right intervention, and what to do next.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#fit">See if your challenge fits</a><a class="button button-secondary" href="#method">Explore the WALL method</a></div>
         <p class="hero-proof">One team. One significant problem. One decision worth defending.</p>
       </div>
-
       <div class="hero-wall reveal" aria-label="A wall of common AI programme pressures">
         <div class="wall-grid" aria-hidden="true"></div>
-        <article class="note note-a">
-          <span>01 / PRESSURE</span>
-          <strong>“We need an AI strategy.”</strong>
-        </article>
-        <article class="note note-b">
-          <span>02 / ACTIVITY</span>
-          <strong>Thirty use cases. No value case.</strong>
-        </article>
-        <article class="note note-c">
-          <span>03 / RISK</span>
-          <strong>The vendor is defining the problem.</strong>
-        </article>
-        <article class="note note-d">
-          <span>04 / REALITY</span>
-          <strong>The data is not ready.</strong>
-        </article>
-        <div class="problem-tape">
-          <span>START HERE</span>
-          <strong>WHAT IS ACTUALLY HAPPENING?</strong>
-        </div>
-        <div class="marker-line" aria-hidden="true"></div>
+        <article class="note note-a"><span>01 / PRESSURE</span><strong>“We need an AI strategy.”</strong></article>
+        <article class="note note-b"><span>02 / ACTIVITY</span><strong>Thirty use cases. No value case.</strong></article>
+        <article class="note note-c"><span>03 / RISK</span><strong>The vendor is defining the problem.</strong></article>
+        <article class="note note-d"><span>04 / REALITY</span><strong>The data is not ready.</strong></article>
+        <div class="problem-tape"><span>START HERE</span><strong>WHAT IS ACTUALLY HAPPENING?</strong></div><div class="marker-line" aria-hidden="true"></div>
       </div>
     </section>
 
-    <section class="manifesto reveal" aria-label="The central belief">
-      <p>Most organisations do not have an AI problem.</p>
-      <h2>They have a clarity problem — and technology is arriving before the truth.</h2>
-    </section>
+    <section class="manifesto reveal" aria-label="The central belief"><p>Most organisations do not have an AI problem.</p><h2>They have a clarity problem — and technology is arriving before the truth.</h2></section>
 
     <section class="section section-dark" id="problem">
-      <div class="section-intro reveal">
-        <p class="kicker kicker-light">The expensive mistake</p>
-        <h2>Stop starting with the solution.</h2>
-        <p>
-          Organisations are spending on AI, technology and transformation before they have created a shared,
-          evidence-based view of the problem. That creates activity, not confidence.
-        </p>
-      </div>
-
+      <div class="section-intro reveal"><p class="kicker kicker-light">The expensive mistake</p><h2>Stop starting with the solution.</h2><p>Organisations are spending on AI, technology and transformation before they have created a shared, evidence-based view of the problem. That creates activity, not confidence.</p></div>
       <div class="enemy-grid">
-        <article class="enemy-card reveal">
-          <span>01</span>
-          <h3>AI theatre</h3>
-          <p>Visible activity designed to prove momentum, without a disciplined link to operational value.</p>
-        </article>
-        <article class="enemy-card reveal">
-          <span>02</span>
-          <h3>Technology looking for a problem</h3>
-          <p>Use cases multiply because the tool is exciting, not because the business problem is understood.</p>
-        </article>
-        <article class="enemy-card reveal">
-          <span>03</span>
-          <h3>Pilots without value</h3>
-          <p>Teams can demonstrate capability but cannot defend the investment, owner, measure or next move.</p>
-        </article>
-        <article class="enemy-card enemy-card-accent reveal">
-          <span>The rule</span>
-          <h3>Not every problem needs AI.</h3>
-          <p>Sometimes the right move is better data, a simpler process, clear ownership — or stopping the work.</p>
-        </article>
+        <article class="enemy-card reveal"><span>01</span><h3>AI theatre</h3><p>Visible activity designed to prove momentum, without a disciplined link to operational value.</p></article>
+        <article class="enemy-card reveal"><span>02</span><h3>Technology looking for a problem</h3><p>Use cases multiply because the tool is exciting, not because the business problem is understood.</p></article>
+        <article class="enemy-card reveal"><span>03</span><h3>Pilots without value</h3><p>Teams can demonstrate capability but cannot defend the investment, owner, measure or next move.</p></article>
+        <article class="enemy-card enemy-card-accent reveal"><span>The rule</span><h3>Not every problem needs AI.</h3><p>Sometimes the right move is better data, a simpler process, clear ownership — or stopping the work.</p></article>
+      </div>
+    </section>
+
+    <section class="section origin-section" id="origin">
+      <div class="origin-layout">
+        <figure class="origin-image reveal"><img src="https://roseattridge.com/put-it-on-wall-2023.jpg" alt="Rose Attridge working in front of a large brown-paper process wall" loading="lazy" /><figcaption>Real diagnostic work. Detail obscured to protect the organisation involved.</figcaption></figure>
+        <div class="origin-copy reveal">
+          <p class="kicker">Why the wall</p><h2>The wall was never a metaphor.</h2>
+          <p class="origin-lead">Rose has spent most of her career as a Lean Six Sigma Black Belt, taking complex operations apart and helping organisations put them back together again.</p>
+          <p>Across operational improvement, the development of an AI governance and decision framework for a large FTSE 250 organisation, and more recent work in complex advanced engineering, the turning point has repeatedly been the same:</p>
+          <blockquote>Get the right people around a wall. Make the work visible. Build one shared picture.</blockquote>
+          <p>Brown paper and Post-it notes are not workshop theatre. They create a place where evidence, frontline experience, assumptions, contradictions and difficult questions can exist together.</p>
+          <p>The people doing the work can see where they fit. Their knowledge is counted. Different interpretations can be challenged openly. And the eventual decision belongs to the people who must make it work — not only to the person who produced the presentation.</p>
+          <p><strong>Put It On The Wall turns that repeatedly proven way of working into a structured decision system organisations can operate for themselves.</strong></p>
+          <div class="origin-proof-strip"><span>Lean Six Sigma</span><span>Operational transformation</span><span>FTSE 250 AI governance</span><span>Advanced engineering</span></div>
+        </div>
       </div>
     </section>
 
     <section class="section method-section" id="method">
-      <div class="section-intro reveal">
-        <p class="kicker">The WALL method</p>
-        <h2>Evidence becomes visible.<br>A decision becomes possible.</h2>
-        <p>WALL is the repeatable problem-to-action method at the heart of every programme.</p>
-      </div>
-
+      <div class="section-intro reveal"><p class="kicker">The WALL method</p><h2>Evidence becomes visible.<br>A decision becomes possible.</h2><p>WALL is the repeatable problem-to-action method at the heart of every programme.</p></div>
       <div class="method-grid">
-        <article class="method-card reveal">
-          <div class="method-letter">W</div>
-          <div>
-            <p class="method-step">01 / Witness reality</p>
-            <h3>See what is actually happening.</h3>
-            <p>Bring evidence, experience, contradictions and unknowns into the same field of view.</p>
-          </div>
-        </article>
-        <article class="method-card reveal">
-          <div class="method-letter">A</div>
-          <div>
-            <p class="method-step">02 / Articulate the problem</p>
-            <h3>Separate symptoms, causes and assumptions.</h3>
-            <p>Turn a crowded story into a clear, solution-neutral problem worth solving.</p>
-          </div>
-        </article>
-        <article class="method-card reveal">
-          <div class="method-letter">L</div>
-          <div>
-            <p class="method-step">03 / Locate the leverage</p>
-            <h3>Compare AI with credible alternatives.</h3>
-            <p>Test where intervention can create value — and where technology would only add noise.</p>
-          </div>
-        </article>
-        <article class="method-card reveal">
-          <div class="method-letter">L</div>
-          <div>
-            <p class="method-step">04 / Launch the move</p>
-            <h3>Commit an owner, measure and next action.</h3>
-            <p>Leave with a decision, a proof rule and a practical 30/60/90-day move.</p>
-          </div>
-        </article>
+        <article class="method-card reveal"><div class="method-letter">W</div><div><p class="method-step">01 / Witness reality</p><h3>See what is actually happening.</h3><p>Bring evidence, experience, contradictions and unknowns into the same field of view.</p></div></article>
+        <article class="method-card reveal"><div class="method-letter">A</div><div><p class="method-step">02 / Articulate the problem</p><h3>Separate symptoms, causes and assumptions.</h3><p>Turn a crowded story into a clear, solution-neutral problem worth solving.</p></div></article>
+        <article class="method-card reveal"><div class="method-letter">L</div><div><p class="method-step">03 / Locate the leverage</p><h3>Compare AI with credible alternatives.</h3><p>Test where intervention can create value — and where technology would only add noise.</p></div></article>
+        <article class="method-card reveal"><div class="method-letter">L</div><div><p class="method-step">04 / Launch the move</p><h3>Commit an owner, measure and next action.</h3><p>Leave with a decision, a proof rule and a practical 30/60/90-day move.</p></div></article>
       </div>
+      <div class="method-rule reveal"><span>THE STANDARD</span><strong>Evidence before intervention. A decision before a deck.</strong></div>
+    </section>
 
-      <div class="method-rule reveal">
-        <span>THE STANDARD</span>
-        <strong>Evidence before intervention. A decision before a deck.</strong>
+    <section class="section outcome-section"><div class="outcome-heading reveal"><p class="kicker">What changes</p><h2>From “we should do AI”<br>to a move the business can defend.</h2></div><div class="outcome-grid">
+      <article class="outcome-card reveal"><span class="outcome-number">01</span><h3>A validated problem</h3><p>A shared, evidence-based definition clear enough to test and important enough to solve.</p></article>
+      <article class="outcome-card reveal"><span class="outcome-number">02</span><h3>A No-AI List</h3><p>Problems where process, data, ownership or stopping the work will create more value than AI.</p></article>
+      <article class="outcome-card reveal"><span class="outcome-number">03</span><h3>One defensible decision</h3><p>Pursue, fix, defer or stop — with the reasoning visible to the people carrying the risk.</p></article>
+      <article class="outcome-card reveal"><span class="outcome-number">04</span><h3>A measurable move</h3><p>An owner, proof-of-value rule, review date and 30/60/90-day route into action.</p></article>
+    </div></section>
+
+    <section class="section deliverables-section" id="deliverables">
+      <div class="section-intro reveal"><p class="kicker">What your team actually receives</p><h2>Visible assets at every decision gate.</h2><p>This is not a workshop followed by an attractive deck. Each stage produces a usable organisational asset.</p></div>
+      <div class="deliverable-grid">
+        <article class="deliverable-card reveal"><span>01</span><div class="asset-preview asset-brief">DECISION<br>BRIEF</div><h3>Sponsor decision brief</h3><p>The decision, value at stake, boundaries, sponsor and definition of done.</p></article>
+        <article class="deliverable-card reveal"><span>02</span><div class="asset-preview asset-evidence">EVIDENCE<br>JOURNEY</div><h3>Stakeholder evidence journey</h3><p>Participant briefs, surveys, evidence requests and ready-written communications.</p></article>
+        <article class="deliverable-card reveal"><span>03</span><div class="asset-preview asset-reality">REALITY<br>WALL</div><h3>Reality Wall</h3><p>Evidence, frontline experience, assumptions, contradictions and unknowns.</p></article>
+        <article class="deliverable-card reveal"><span>04</span><div class="asset-preview asset-opportunity">OPPORTUNITY<br>WALL</div><h3>Opportunity Wall</h3><p>A validated problem, leverage options and AI versus non-AI comparison.</p></article>
+        <article class="deliverable-card reveal"><span>05</span><div class="asset-preview asset-decision">DECISION<br>WALL</div><h3>Decision Wall</h3><p>Pursue, fix, defer or stop — with the rationale and quality gate visible.</p></article>
+        <article class="deliverable-card reveal"><span>06</span><div class="asset-preview asset-move">30 / 60 / 90<br>MOVE</div><h3>Executive move plan</h3><p>Owner, measure, proof rule, review date and the first practical actions.</p></article>
       </div>
     </section>
 
-    <section class="section outcome-section">
-      <div class="outcome-heading reveal">
-        <p class="kicker">What changes</p>
-        <h2>From “we should do AI”<br>to a move the business can defend.</h2>
-      </div>
+    <section class="section section-yellow" id="programme"><div class="programme-layout">
+      <div class="programme-copy reveal"><p class="kicker">The first product</p><h2>AI Opportunity Wall</h2><p class="programme-lead">A guided six-week organisational decision system for one team tackling one significant problem.</p><ul class="programme-list"><li>Rose-led interventions that frame the moments requiring expert judgement</li><li>A complete internal facilitator runbook, not a loose toolkit</li><li>Stakeholder briefs, surveys, evidence forms and communications</li><li>Reality, opportunity and decision walls built through quality gates</li><li>An executive decision output and measurable proof-of-value plan</li></ul><div class="programme-price"><span>FOUNDING-TEAM PROGRAMME</span><strong>From £15,000 + VAT</strong><small>Fixed fee. Final scope follows the fit conversation.</small></div><a class="button button-black" href="#buying">See how buying works</a></div>
+      <div class="journey reveal" aria-label="Six stages of the AI Opportunity Wall journey"><article><span>01</span><div><strong>Frame</strong><p>Choose the problem and define the value at stake.</p></div></article><article><span>02</span><div><strong>Witness</strong><p>Collect evidence and perspectives that normally stay apart.</p></div></article><article><span>03</span><div><strong>Articulate</strong><p>Build the Reality Wall and validate the problem.</p></div></article><article><span>04</span><div><strong>Locate</strong><p>Compare AI and non-AI interventions against the evidence.</p></div></article><article><span>05</span><div><strong>Decide</strong><p>Pass the gate: pursue, fix, defer or stop.</p></div></article><article><span>06</span><div><strong>Move</strong><p>Commit the owner, measure, review date and first action.</p></div></article></div>
+    </div></section>
 
-      <div class="outcome-grid">
-        <article class="outcome-card reveal">
-          <span class="outcome-number">01</span>
-          <h3>A validated problem</h3>
-          <p>A shared, evidence-based definition that is clear enough to test and important enough to solve.</p>
-        </article>
-        <article class="outcome-card reveal">
-          <span class="outcome-number">02</span>
-          <h3>A No-AI List</h3>
-          <p>Problems where process, data, ownership or stopping the work will create more value than AI.</p>
-        </article>
-        <article class="outcome-card reveal">
-          <span class="outcome-number">03</span>
-          <h3>One defensible decision</h3>
-          <p>Pursue, fix, defer or stop — with the reasoning visible to the people carrying the risk.</p>
-        </article>
-        <article class="outcome-card reveal">
-          <span class="outcome-number">04</span>
-          <h3>A measurable move</h3>
-          <p>An owner, proof-of-value rule, review date and 30/60/90-day route into action.</p>
-        </article>
-      </div>
-    </section>
+    <section class="section proof-section" id="proof"><div class="section-intro reveal"><p class="kicker kicker-light">Evidence beneath the method</p><h2>Field-tested judgement.<br>Now being turned into a system.</h2><p>The examples below are prior experience underpinning the method, not claimed AI Opportunity Wall customer case studies.</p></div><div class="proof-grid"><article class="proof-card reveal"><span>Operational improvement</span><h3>Lean Six Sigma as a career-long operating discipline.</h3><p>Complex work made visible, challenged with the people performing it, and redesigned around evidence rather than assumptions.</p></article><article class="proof-card reveal"><span>FTSE 250 · AI governance</span><h3>A shared framework for governing AI decisions.</h3><p>The same visibility principle applied while developing AI governance and decision architecture for a large FTSE 250 organisation.</p></article><article class="proof-card reveal"><span>Advanced engineering</span><h3>Complex programme understanding and prioritisation.</h3><p>Evidence, ownership and competing realities brought together to make serious programme decisions easier to understand and act on.</p></article></div><div class="proof-principle reveal"><strong>The consistent result:</strong><span>people feel seen, the work becomes discussable, and the decision becomes collectively owned.</span></div></section>
 
-    <section class="section section-yellow" id="programme">
-      <div class="programme-layout">
-        <div class="programme-copy reveal">
-          <p class="kicker">The first product</p>
-          <h2>AI Opportunity Wall</h2>
-          <p class="programme-lead">
-            A guided six-week organisational decision system for one team tackling one significant problem.
-          </p>
-          <ul class="programme-list">
-            <li>Rose-led recorded interventions that frame each decision moment</li>
-            <li>A complete internal facilitator runbook, not a loose toolkit</li>
-            <li>Stakeholder briefs, surveys, evidence forms and ready-written communications</li>
-            <li>Reality, opportunity and decision walls built through quality gates</li>
-            <li>An executive decision output and a measurable proof-of-value plan</li>
-          </ul>
-          <a class="button button-black" href="mailto:rose@roseattridge.com?subject=AI%20Opportunity%20Wall%20founding%20team">Talk about a founding team place</a>
-        </div>
+    <section class="section fit-section" id="fit"><div class="fit-grid"><article class="fit-card fit-yes reveal"><p class="kicker">This is for you when</p><h2>The decision risk is yours.</h2><ul><li>You are under pressure to produce an AI strategy or pipeline</li><li>Too many use cases are competing for attention</li><li>Pilots exist, but value and ownership remain unclear</li><li>A vendor-led agenda is outrunning business understanding</li><li>The problem crosses functions, evidence and operating realities</li></ul><p class="fit-roles">Built for COOs, data and analytics leaders, transformation directors, strategy leaders and business-unit MDs.</p></article><article class="fit-card fit-no reveal"><p class="kicker">This is not for you when</p><h2>The answer has already been decided.</h2><ul><li>You only want an impressive list of AI ideas</li><li>The technology must be recommended regardless of evidence</li><li>No sponsor is prepared to own the eventual decision</li><li>The organisation wants a workshop, but not the difficult truth</li></ul></article></div></section>
 
-        <div class="journey reveal" aria-label="Six stages of the AI Opportunity Wall journey">
-          <article><span>01</span><div><strong>Frame</strong><p>Choose the problem and define the value at stake.</p></div></article>
-          <article><span>02</span><div><strong>Witness</strong><p>Collect the evidence and perspectives that normally stay apart.</p></div></article>
-          <article><span>03</span><div><strong>Articulate</strong><p>Build the Reality Wall and validate the problem.</p></div></article>
-          <article><span>04</span><div><strong>Locate</strong><p>Compare AI and non-AI interventions against the evidence.</p></div></article>
-          <article><span>05</span><div><strong>Decide</strong><p>Pass the gate: pursue, fix, defer or stop.</p></div></article>
-          <article><span>06</span><div><strong>Move</strong><p>Commit the owner, measure, review date and first action.</p></div></article>
-        </div>
-      </div>
-    </section>
+    <section class="section glance-section"><div class="section-intro reveal"><p class="kicker">At a glance</p><h2>A bounded enterprise programme.</h2></div><dl class="glance-grid reveal"><div><dt>Duration</dt><dd>Six weeks</dd></div><div><dt>Scope</dt><dd>One team. One significant problem.</dd></div><div><dt>Sponsor</dt><dd>One accountable decision owner</dd></div><div><dt>Operator</dt><dd>One capable internal facilitator</dd></div><div><dt>Participants</dt><dd>A small cross-functional evidence group</dd></div><div><dt>Rose's role</dt><dd>Framing, expert judgement and quality assurance</dd></div><div><dt>Output</dt><dd>One defensible decision and measurable move</dd></div><div><dt>Commercial model</dt><dd>Fixed fee from £15,000 + VAT</dd></div></dl></section>
 
-    <section class="section fit-section">
-      <div class="fit-grid">
-        <article class="fit-card fit-yes reveal">
-          <p class="kicker">This is for you when</p>
-          <h2>The decision risk is yours.</h2>
-          <ul>
-            <li>You are under pressure to produce an AI strategy or pipeline</li>
-            <li>Too many use cases are competing for attention</li>
-            <li>Pilots exist, but value and ownership remain unclear</li>
-            <li>A vendor-led agenda is outrunning business understanding</li>
-            <li>The problem crosses functions, evidence and operating realities</li>
-          </ul>
-          <p class="fit-roles">Built for COOs, data and analytics leaders, transformation directors, strategy leaders and business-unit MDs.</p>
-        </article>
+    <section class="section buying-section" id="buying"><div class="buying-intro reveal"><p class="kicker">A clear route to yes — or no</p><h2>Know exactly what happens next.</h2><p>The buying journey is deliberately light. First we test fit. Only then do you receive a clear fixed-fee scope, dates and participant requirements. No open-ended discovery phase and no pressure to proceed.</p></div><div class="buying-grid"><article class="buying-step reveal"><span>01</span><h3>Check the fit</h3><p>Use the criteria above to decide whether the challenge is significant, cross-functional and genuinely undecided.</p></article><article class="buying-step reveal"><span>02</span><h3>Talk for 30 minutes</h3><p>Rose tests the decision, sponsor, evidence and urgency. You leave knowing whether this is the right next move.</p></article><article class="buying-step reveal"><span>03</span><h3>Receive a fixed scope</h3><p>A concise proposal sets out the outcome, fee, six-week dates, internal roles, boundaries and definition of done.</p></article><article class="buying-step reveal"><span>04</span><h3>Launch the team</h3><p>Once agreed, the sponsor and facilitator receive the launch pack, participant brief and first evidence request.</p></article></div><div class="buying-assurance reveal"><div><strong>The first conversation is a fit test, not a sales performance.</strong><p>Bring the decision you are carrying. Rose will tell you candidly whether AI Opportunity Wall fits, needs reframing or is unnecessary.</p><span class="decision-microcopy">No commitment · No speculative workshop · No technology recommendation in advance</span></div><a class="button button-primary" href="fit.html">Request a 30-minute fit conversation</a></div></section>
 
-        <article class="fit-card fit-no reveal">
-          <p class="kicker">This is not for you when</p>
-          <h2>The answer has already been decided.</h2>
-          <ul>
-            <li>You only want an impressive list of AI ideas</li>
-            <li>The technology must be recommended regardless of the evidence</li>
-            <li>No sponsor is prepared to own the eventual decision</li>
-            <li>The organisation wants a workshop, but not the difficult truth</li>
-          </ul>
-        </article>
-      </div>
-    </section>
+    <section class="section founder-section" id="founder"><div class="founder-mark reveal" aria-hidden="true"><span>RA</span><div class="founder-line"></div></div><div class="founder-copy reveal"><p class="kicker">Created by Rose Attridge</p><h2>Rose in the room — without Rose in the diary.</h2><p>Put It On The Wall codifies the judgement Rose has built across operational improvement, data, governance and complex transformation. Rose frames the moments that need expert judgement; the internal team operates the journey inside the organisation.</p><p>The aim is a stronger decision and an organisation that can act on it — not dependence on a consultant.</p><div class="founder-links"><a href="https://roseattridge.com/">About Rose</a><a href="https://thedatanarrator.com/">The Data Narrator</a><a href="https://www.linkedin.com/in/roseattridge">LinkedIn</a></div></div></section>
 
-    <section class="section founder-section" id="founder">
-      <div class="founder-mark reveal" aria-hidden="true">
-        <span>RA</span>
-        <div class="founder-line"></div>
-      </div>
-      <div class="founder-copy reveal">
-        <p class="kicker">Created by Rose Attridge</p>
-        <h2>Built from the work, not from AI hype.</h2>
-        <p>
-          Rose has spent two decades making complex organisations easier to see and change — from frontline process improvement
-          and commercial transformation to data strategy, governance and advanced engineering programmes.
-        </p>
-        <p>
-          Put It On The Wall turns that judgement into a system internal teams can operate: expert-guided,
-          evidence-led and designed to produce a decision rather than dependency on a consultant.
-        </p>
-        <div class="founder-links">
-          <a href="https://roseattridge.com/">About Rose</a>
-          <a href="https://thedatanarrator.com/">The Data Narrator</a>
-          <a href="https://www.linkedin.com/in/roseattridge">LinkedIn</a>
-        </div>
-      </div>
-    </section>
+    <section class="section faq-section" id="faq"><div class="section-intro reveal"><p class="kicker">Questions worth asking</p><h2>No theatre. No mystery.</h2></div><div class="faq-list"><details class="reveal"><summary>Does every programme end with an AI recommendation?</summary><p>No. A credible No-AI decision is a valuable outcome. The purpose is to choose the intervention that creates value, not to justify technology already selected.</p></details><details class="reveal"><summary>Is this an AI strategy workshop?</summary><p>No. It is a six-week AI opportunity assessment and decision system. Live sessions are used only where people need to resolve different interpretations, make trade-offs or commit ownership.</p></details><details class="reveal"><summary>How is this different from AI use-case prioritisation?</summary><p>Conventional use-case prioritisation often starts with a list of ideas. AI Opportunity Wall starts with evidence, validates the underlying business problem and compares AI with credible non-AI alternatives before anything is prioritised.</p></details><details class="reveal"><summary>Is this consultancy or a toolkit?</summary><p>Neither in the usual sense. It is a fully designed team journey: Rose frames the moments that require expert judgement, while an internal facilitator operates the runbook inside the organisation.</p></details><details class="reveal"><summary>What does the programme cost?</summary><p>Founding-team programmes start from £15,000 + VAT. If the programme is appropriate, Rose sends a fixed-fee scope covering the six-week journey, dates, internal roles, support boundaries and definition of done.</p></details><details class="reveal"><summary>Who needs to be involved?</summary><p>You need an accountable sponsor carrying the decision risk, one capable internal facilitator and a small cross-functional group with access to the relevant evidence and operating reality.</p></details><details class="reveal"><summary>What happens in the first conversation?</summary><p>We test whether the problem is significant, cross-functional and genuinely undecided; whether there is a sponsor carrying the risk; and whether AI Opportunity Wall is the right next move. You will get a candid answer.</p></details></div></section>
 
-    <section class="section faq-section">
-      <div class="section-intro reveal">
-        <p class="kicker">Questions worth asking</p>
-        <h2>No theatre. No mystery.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="reveal">
-          <summary>Does every programme end with an AI recommendation?</summary>
-          <p>No. A credible No-AI decision is a valuable outcome. The purpose is to choose the intervention that creates value, not to justify a technology already selected.</p>
-        </details>
-        <details class="reveal">
-          <summary>Is this consultancy or a toolkit?</summary>
-          <p>Neither in the usual sense. It is a fully designed team journey: Rose frames the moments that require expert judgement, while an internal facilitator operates the runbook inside the organisation.</p>
-        </details>
-        <details class="reveal">
-          <summary>Can the WALL method be used beyond AI?</summary>
-          <p>Yes. WALL is a problem-to-action method. AI is the first market entry because the pressure is urgent; future applications will only be launched when the first product has repeatable proof.</p>
-        </details>
-        <details class="reveal">
-          <summary>What happens in a first conversation?</summary>
-          <p>We test whether the problem is significant, cross-functional and decision-ready; whether there is a sponsor carrying the risk; and whether a founding team programme is the right next move.</p>
-        </details>
-      </div>
-    </section>
-
-    <section class="final-cta">
-      <div class="final-cta-wall" aria-hidden="true"></div>
-      <div class="final-cta-copy reveal">
-        <p class="kicker kicker-light">Founding team conversations are open</p>
-        <h2>Bring the problem.<br>Not the predetermined answer.</h2>
-        <p>Tell Rose what the organisation is trying to decide, why it matters now and who is carrying the risk.</p>
-        <a class="button button-yellow" href="mailto:rose@roseattridge.com?subject=AI%20Opportunity%20Wall%20founding%20team&body=Hi%20Rose%2C%0A%0AI%27d%20like%20to%20talk%20about%20whether%20our%20challenge%20fits%20the%20AI%20Opportunity%20Wall.%0A%0AOrganisation%3A%0AThe%20problem%20we%27re%20trying%20to%20solve%3A%0AWhy%20now%3A%0AWho%20carries%20the%20decision%20risk%3A%0A">Start the conversation</a>
-      </div>
-    </section>
+    <section class="final-cta"><div class="final-cta-wall" aria-hidden="true"></div><div class="final-cta-copy reveal"><p class="kicker kicker-light">Founding-team conversations are open</p><h2>Bring the problem.<br>Not the predetermined answer.</h2><p>Share what the organisation is trying to decide, why it matters now and who carries the risk. Rose will reply personally.</p><div class="final-actions"><a class="button button-yellow" href="fit.html">Request a 30-minute fit conversation</a><a class="text-cta" href="mailto:rose@roseattridge.com?subject=AI%20Opportunity%20Wall%20enquiry">Or email Rose directly →</a></div></div></section>
   </main>
 
-  <footer class="site-footer">
-    <a class="footer-wordmark" href="#top">PUT IT ON THE WALL™</a>
-    <p>See the problem. Make the decision. Move the business.</p>
-    <div class="footer-links">
-      <a href="mailto:rose@roseattridge.com">rose@roseattridge.com</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="https://roseattridge.com/">A Rose Attridge company</a>
-    </div>
-    <small>© <span data-year></span> Put It On The Wall. Trade mark application pending.</small>
-  </footer>
-
+  <footer class="site-footer"><a class="footer-wordmark" href="#top">PUT IT ON THE WALL™</a><p>See the problem. Make the decision. Move the business.</p><div class="footer-links"><a href="mailto:rose@roseattridge.com">rose@roseattridge.com</a><a href="privacy.html">Privacy</a><a href="https://roseattridge.com/">A Rose Attridge company</a></div><small>© <span data-year></span> Put It On The Wall.</small></footer>
   <script src="script.js" defer></script>
 </body>
 </html>
