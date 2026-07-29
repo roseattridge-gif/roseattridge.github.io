@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request a fit conversation | Put It On The Wall</title>
+  <meta name="description" content="Request a 30-minute fit conversation for AI Opportunity Wall." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="fit-request-page">
+  <header class="fit-request-header">
+    <a class="wordmark" href="index.html" aria-label="Put It On The Wall home"><span>PUT IT</span><span>ON THE</span><span class="wordmark-wall">WALL</span></a>
+    <a href="index.html#buying">← Back to the buying journey</a>
+  </header>
+  <main class="fit-request-main">
+    <section class="fit-request-copy">
+      <p class="kicker">30-minute fit conversation</p>
+      <h1>Bring the decision you are carrying.</h1>
+      <p>This is a candid first conversation to decide whether AI Opportunity Wall fits, needs reframing or is unnecessary.</p>
+      <p>Share enough context for Rose to understand the decision, the urgency and who carries the risk. Submitting the form opens a prepared email in your usual mail application so you stay in control of what is sent.</p>
+      <div class="fit-request-note"><strong>No commitment.</strong> No speculative workshop. No predetermined AI recommendation. No open-ended consulting meter.</div>
+    </section>
+    <form class="fit-form" data-fit-form>
+      <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
+      <label>Your email<input type="email" name="email" autocomplete="email" required /></label>
+      <label>Organisation<input type="text" name="organisation" autocomplete="organization" required /></label>
+      <label>What are you trying to decide?<textarea name="decision" required></textarea></label>
+      <label>Why does it matter now?<textarea name="urgency" required></textarea></label>
+      <label>Who carries the decision risk?<textarea name="sponsor" required></textarea></label>
+      <label>What have you already tried? <span aria-hidden="true">(optional)</span><textarea name="attempted"></textarea></label>
+      <button class="button button-primary" type="submit">Prepare my fit request</button>
+      <p class="fit-form-help">Your answers are not transmitted by this page. The button prepares an email for you to review and send.</p>
+    </form>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>
