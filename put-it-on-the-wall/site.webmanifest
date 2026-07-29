@@ -1,0 +1,16 @@
+{
+  "name": "Put It On The Wall",
+  "short_name": "WALL",
+  "description": "Problem-first strategy for the age of AI.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3efe4",
+  "theme_color": "#151510",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
