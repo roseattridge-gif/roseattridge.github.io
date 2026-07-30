@@ -1,11 +1,11 @@
 {
   "name": "Put It On The Wall",
   "short_name": "WALL",
-  "description": "Problem-first strategy for the age of AI.",
+  "description": "A new operating system for organisational complexity.",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f3efe4",
-  "theme_color": "#151510",
+  "background_color": "#f2efe8",
+  "theme_color": "#090909",
   "icons": [
     {
       "src": "favicon.svg",
